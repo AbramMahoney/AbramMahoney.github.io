@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet " href="css/my-css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/myscripts.js"></script>
+        <title>Contact page</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Contact Haukai Restaurant</h1>
+        </header>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="Menu.html">Menu</a>
+          <a href="Reservations.html">Reservations</a>
+          <a href="Contact.html" class="active">Contact</a>
+          <a href="Hours.html">Hours</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+         </a>
+        </div>
+
+       <div style="width: 100%;">
+       <div id="map" style="width: 50%; float: right;"> 
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.98441745825!2d174.0895625150069!3d-35.28151368028949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bbad0666d6775%3A0x4b06a50c97b802c8!2s29-1%20Williams%20Road%2C%20Paihia%200200%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1670402842644!5m2!1sen!2sus" 
+        width="800" 
+        height="600" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+
+    <div id="contactForm" class="container" style="width: 50%; float: left;">
+        <form action="action_page.php">  
+            <label for="fname">First name: </label>   
+          <input type="text" aria-label="enter first name" id="fname" name="firstname" placeholder="Your first name...">   
+          <label for="lname">Last name:</label>     
+          <input type="text" aria-label="enter last name" id="lname" name="lastname" placeholder="Your last name...">
+          <label for="country">Where are you from?</label>
+          <select id="country" name="country">
+            <option value="newzealand">I am from New Zealand</option>
+            <option value="austrailia">I am from Austrailia</option>
+            <option value="other">my country is not listed here</option>
+          </select>
+          <label for="subject">Enter your message here:</label>
+          <textarea id="subject" aria-label="enter your message here" name="subject" placeholder="What would you like to tell us?" style="height:200px"></textarea>
+          <input type="submit" aria-label="submit your message" value="Submit">
+        </form>
+      </div>
+    </div>
+
+        <footer>
+            <p><span class="copyright">&copy; Copyright 2022 by Haukai Restaurant NZ.</span></p>
+          </footer>
+    </body>
+</html>
